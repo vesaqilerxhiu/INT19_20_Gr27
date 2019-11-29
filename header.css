@@ -11,24 +11,39 @@ header h3
 {
 	text-align: center;
 }
- nav#mainMenu a:link 
+nav#mainMenu
 {
-	font-weight: bold;
-	color: gray;
+	
+	text-align: left;
+	color:black;
+	background-color: black;
+	font-family: sans-serif;
+	
 }
-nav#secondaryMenu a:link 
+nav#secondaryMenu
 {
-	font-weight: bold;
-	color: black;
+	text-align: left;
+	font-size: 1.1em;
+	color:black;
+	font-family: sans-serif;
 }
+
 a
 {
 	text-decoration: none;
 }
+a:hover
+{
+	color:gray;
+}
 a:visited
 {
-	color:white;
+	
 	text-decoration: none;
+}
+a:active
+{
+	color:yellow;
 }
 
 nav
@@ -36,7 +51,8 @@ nav
 	
 	border-color: black;
 	border-top: solid 1px;
-	border-bottom: solid 1px;	
+	border-bottom: solid 1px;
+	color:black;	
 
 }
 nav ul li
@@ -44,19 +60,6 @@ nav ul li
 	list-style: none;
 	display: inline;
 	padding: 12px;
+	font-color:black;
 
-}
-nav#mainMenu
-{
-	
-	text-align: left;
-	font-color:white;
-	background-color: black;
-	
-}
-nav#secondaryMenu
-{
-	text-align: left;
-	font-size: 1.1em;
-	
 }
