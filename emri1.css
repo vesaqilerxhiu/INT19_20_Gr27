@@ -1,0 +1,66 @@
+body
+{
+background-color: lightgrey;	
+}
+header h1 
+{
+	font-size: 52px;
+	text-align: center;	
+}
+header h3
+{
+	text-align: center;
+}
+nav#mainMenu a:link 
+{
+	font-weight: bold;
+	color: grey;
+}
+nav#secondaryMenu a:link 
+{
+	font-weight: bold;
+	color: black;
+}
+a
+{
+	text-decoration: none;
+}
+a:visited
+{
+	color:white;
+	text-decoration: none;
+}
+a:hover
+{
+	color: grey;
+}
+nav
+{
+	
+	border-color: black;
+	border-top: solid 1px;
+	border-bottom: solid 1px;	
+
+}
+nav ul li
+{
+	list-style: none;
+	display: inline;
+	padding: 12px;
+
+}
+nav#mainMenu
+{
+	
+	text-align: left;
+	font-color:gray;
+	background-color:black;
+	
+}
+nav#secondaryMenu
+{
+	text-align: left;
+	font-size: 1.1em;
+	font-color:black;
+	
+}
