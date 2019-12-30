@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" type="text/css" href="promiworld.css">
+	<title>Promi World</title>
+</head>
+<body>
+	<header>
+    <nav id="mainMenu">
+    <ul>
+       <li><a href="signup.html" target="_blank">Sign up </a></li> 
+           <li><a href="login.html" target="_blank">Login </a></li>
+           <li><a href="#">RSS feeds </a></li>
+           <li><a href="#">Archived news</a></li>
+           <li><input id="nowButton" type="button" value="Date&Time" style="float: right;"></li>
+       </ul>
+   </nav>
+   <h1>Promi World </h1>
+   <h3>Find more promotions here</h3>
+
+   <nav id="secondaryMenu">
+    <ul>
+      <li><a href="#">HOMEPAGE </a></li> 
+           <li><a href="#">STYLE DEMO </a></li>
+           <li><a href="#">FULL WIDTH </a></li>
+           <li><a href="#">DROPDOWN</a></li>
+           <li><a href="#">LINKED TEXT</a></li>
+       </ul>
+   </nav>
+
+  </header>
+  
+<div class="content">
+	<h1>Promi World </h1>
+	<h3>Here you will find more promotions</h3>
+<a href="https://www.youtube.com/watch?v=wpq7wn2YPYU" class="button"><strong>Click!
+</strong></a>
+
+
+</div>
+
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images\Dua-Lipa.jpg" width="1000" height="700">
+  <div class="text">Music</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images\Gigi-Hadid.jpg" width="1000" height="700">
+  <div class="text">Modeling</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/Hailey-Bieber.png" width="1000" height="700">
+  <div class="text">Modeling</div>
+</div>
+  <div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/Shawn-Mendes.jpg" width="1000" height="700">
+  <div class="text">Music</div>
+</div>
+
+</div>
+
+
+<br>
+
+<div style="text-align:center;margin-top: 170px;margin-left:180px;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+s
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+<footer>
+
+        
+    
+      <table>
+         <tr>
+          <td>Lacus information</td>
+          <td>Lacus information</td>
+          <td>Lacus information</td>
+          <td>Lacus information</td>
+          <td>Lacus information</td>
+
+        </tr>
+        <tr>
+           <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+              </tr>
+
+
+      </table>
+
+   
+  
+</footer>
+
+</body>
+
+
+</html>
