@@ -1,0 +1,118 @@
+body {
+	background-color : #212121;
+	margin-left:50px;
+
+
+}
+.content
+{
+	font-color:#e6ecff;
+
+}
+.button{
+  border-radius: 50px;
+  background: none;
+  border: 2px solid #ddd;
+  color: #bbba;
+ 	padding: 18px 35px;
+  text-align: center;
+ 	text-decoration: none;
+  font-size:18px;
+ 	display: inline-block;
+ 	margin-top: 50px;
+ 	margin-left: 100px;
+ 	cursor: pointer;
+ 	transition: .3s;
+  width: 180px;
+}
+header h1 
+{
+	font-size: 80px;
+	text-align: center;
+	font-weight: bold;	
+	font-family: italic;
+	margin: 30px 90px 30px 90px;
+}
+header h3
+{
+	text-align: center;
+	color:gray;
+	font-family: italic;
+}
+nav#mainMenu
+{
+	/*margin-left: 150px;*/
+	text-align: left;
+	color:black;
+	background-color: black;
+	font-family: sans-serif;
+	
+}
+nav#secondaryMenu
+{
+	text-align: left;
+	font-size: 1.1em;
+	color:black;
+	font-family: sans-serif;
+}
+nav#secondaryMenu a
+{
+	color:black;
+}
+nav#secondaryMenu a:hover
+{
+	color:gray;
+}
+a
+{
+	text-decoration: none;
+	color:white;
+}
+a:hover
+{
+	color:gray;
+}
+a:visited
+{
+	
+	text-decoration: none;
+
+}
+a:active
+{
+	color:yellow;
+}
+
+nav
+{
+	
+	
+	border-top: groove 1px;
+	border-bottom: groove 1px;
+	color:black;	
+
+}
+nav ul li
+{
+	list-style: none;
+	display: inline;
+	padding: 12px;
+	font-color:black;
+
+}
+footer 
+{
+ border-top: groove;
+ margin: 1em;
+ text-align: left;
+
+}
+footer p 
+{
+	color:gray;
+	padding: 12px;
+}
+.slideshow-container
+{
+	margin-right:0 px;
+}
