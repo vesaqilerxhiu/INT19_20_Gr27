@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedbacks</title>
+	<style type="text/css">
+	
+		button{
+			background-color: black;
+			padding:1em;
+			border-radius: 8px;
+
+		}
+		button a
+		{
+			text-decoration: none;
+			color:white;
+
+		}
+		button a:hover
+		{
+			color:gray;
+		}
+	</style>
+	<script>
+		
+
+var car = "Feedbacks";
+document.getElementById("demo").innerHTML = car;
+ 
+function myFunction() {
+  var str = document.getElementById("surname").innerHTML; 
+  var res = str.replace(/Surname/g, "Last Name");
+  document.getElementById("surname").innerHTML = res;
+
+}
+
+function myFunction1() {
+  var str = "Your opinion is too important to us!"; 
+  var res = str.match(/to/g);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+</head>
+<body>
+	<h3>Your opinion is too important to us! </h3>
+	<p>Click the button to perfom a global search for the letters "to" in the last sentence, and display the matches</p>
+	<button style="color:white;"  onclick="myFunction1()">Click</button>
+	<p id="demo"></p>
+	<form>
+		<fieldset>
+			<legend><b>Feedbacks</b></legend>
+			<h3><b>Name</b></h3>
+  <input type="text" name="Name" placeholder="Enter Name" >
+  <h3 id="surname"><b>Surname</b></h3>
+
+  <input type="text" name="Surname" placeholder="Enter Surname" ><br><br>
+  <button style="color:white;" onclick="myFunction()">Change</button>
+ 
+			<h3><b>Mag Magazine to you </b></h3><br/>
+					<textarea name="description" rows="5" cols="60">
+					</textarea><br><br>
+
+					<button><a href = "#">Submit</button></a>
+		<p id="demo">Feedbacks</p>
+		</fieldset>
+	</form>
+
+</body>
+</html>
