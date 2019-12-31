@@ -3,6 +3,10 @@
 <head>
 	<title>Sign In</title>
 	<style type="text/css">
+  .grad {
+  background-image: linear-gradient(to right,blue , white);
+}
+
 		 body
   {
     background-color: lightgray;
@@ -65,23 +69,57 @@
       font-family:sans-serif;
       color:white;
     }
-	</style>
+    #Submit
+    {
+      background-color: black;
+      color: white;
+      padding: 1em;
+      border-radius: 10px;
+
+    }
+    </style>
+  <script>
+function validateForm() {
+  var x = document.forms["myForm"]["femail"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  var now = new Date();
+var hours = now.getHours();
+
+
+
+document.write('It\'s now: ', hours, '<br><br>');
+document.bgColor="lightgray";
+
+//18-19 night
+if (hours > 17 && hours < 20){
+ document.write ('<body style="background-color: orange">');
+}
+}
+</script>
+
 </head>
-<body>
-	<div>
+<body >
+	<div class="grad">
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
 		<h4 id="rv">Sign In to our community</h4>
 		<h3>Email address</h3>
-		<input type="email" name="Email" placeholder="Enter your email address">
+		<input type="email" name="femail" placeholder="Enter your email address">
 		<h3>Password</h3>
 		<input type="password" name="Password" placeholder="Enter your password"><br/><br/>
-		<button><a href="#">Log In</button></a><br/><br/>
+	<input id = "Submit" type="submit" value="Submit">
 		<p id="fp"><a href="#">Forgot your password?</a></p>
 		
 	</div>
-	<div id="cr">
+	<div id="cr" class="grad">
 		<h3>New to Mag Magazine?</h3>
 		<h3><a href="signup.html">Sign Up</a></h3>
+  </form>  
 	</div>
+  
+
 		
 
 </body>
