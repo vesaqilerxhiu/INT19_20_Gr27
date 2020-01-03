@@ -8,13 +8,11 @@ height: 1840px;
 html { font-size: 62.5%; }
 
 body {
-  background-color:lightgray;
   margin: 0;
   font-size: 14px;
   font-family: 'PT Sans', sans-serif;
   /*width: 1000px;*/
  height: 1840px;	
-
 }
 
 
@@ -92,6 +90,8 @@ nav ul li
 	display: inline;
 	padding: 12px;
 	font-color:black;
+}
+
 
 }
 footer 
@@ -144,6 +144,7 @@ div.right1 img
 }
 #gg {
 	border: solid 2px #333333;
+
 
 }
 /*#part2
@@ -267,4 +268,10 @@ div#u2:hover
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
-
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url("./images/borderimg.jpg") 30 round; /* Safari 3.1-5 */
+  -o-border-image: url("./images/borderimg.jpg") 30 round; /* Opera 11-12.1 */
+  border-image: url("./images/borderimg.jpg") 30 round;
+}
