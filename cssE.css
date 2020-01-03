@@ -20,6 +20,7 @@ header h1
 	font-weight: bold;	
 	font-family: italic;
 	margin: 30px 90px 30px 90px;
+	color:black;
 }
 header h3
 {
@@ -46,13 +47,40 @@ background-color: black;
 #song{
 	width: 210px;
 	height: 320px;
-	background-color:rgb(255,156,108);
+	background-color:rgb(162,147,215);
 	margin:80px;
 	padding:3px;
-	color:rgb(255,255,255);
+	color:black;
 	float:left;
 
 }
 .image{
 	width:100%;
 }
+
+
+body
+{
+	margin 0;
+	padding 0;
+	background-color: #ccc !important;
+	color: #fff !important;
+}
+div.pj1 img
+{
+	width:250px;
+	height:200px;
+
+}
+#f1{
+	border:solid 2px #33333;
+	width:50;
+	height: 30px: 
+	color:black;
+}
+#p
+{
+	color:black;
+}
+
+
