@@ -5,35 +5,7 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="./css/css.css">
   <script type="text/javascript" src="./js/js.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<script src="jquery-1.11.2.min.js"></script>
-  <script>
-$(function(){
-
-  $("#btn3").click(function(){
-    $("#cu").hide();
-  });
-  $("#btn4").click(function(){
-    $("#cu").show();
-  });
-});
-  </script>
-  <script>
-function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
-        if (sessionStorage.clickcount) {
-            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-        } else {
-            sessionStorage.clickcount = 1;
-        }
-        document.getElementById("result").innerHTML = "     You have clicked these buttons " + sessionStorage.clickcount + " times.";
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
-</script>
-
+ 
   <header>
     <div id="u1">
     <nav id="mainMenu">
@@ -44,7 +16,6 @@ function clickCounter() {
            <li><a href="feedbacks.html">Feedbacks</a></li>
            <li><input id="nowButton" type="button" value="Date&Time" style="float: right; background-color: #333333;"></li>
        </ul>
-     
    </nav>
  </div>
    <h1>MAG MAGAZINE</h1>
@@ -53,8 +24,8 @@ function clickCounter() {
    <nav id="secondaryMenu">
     <ul>
       <li><a href="#">HOMEPAGE </a></li> 
-           <li><a href="fashion.html">FASHION</a></li>
-           <li><a href="vesa.html">SPORTS</a></li>
+           <li><a href="#">STYLE DEMO </a></li>
+           <li><a href="#">FULL WIDTH </a></li>
            <li><a href="#">DROPDOWN</a></li>
            <li><a href="#">LINKED TEXT</a></li>
        </ul>
@@ -65,7 +36,7 @@ function clickCounter() {
 
 
    <section id="part1">
-         <div class="left1" style="float: left; box-shadow: 10px 10px 5px grey;">
+         <div class="left1" style="float: left">
 
         <img id="gg" src="./images/download.jpg"></img>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -196,11 +167,11 @@ function clickCounter() {
         <table>
           <tr>
           <th>Adverstiment</th>
-          <th>categories</th>
+          <th> Categories</th>
         </tr>
         <tr>
           <td rowspan="3">
-            <img src="./images/download.jpg"></td></tr>
+            <img src="./images/download.jpg" style="padding: 2px;"></td></tr>
           </td></tr>
       
 
@@ -232,19 +203,19 @@ function clickCounter() {
 
 
       <address>
-      <h3 id="cu"><b>Contact Us</b></h3>
-      <button id="btn3" onclick="clickCounter()">Hide</button>
-      <button id="btn4" onclick="clickCounter()">Show</button>
-
-      <div id="result"></div><br>
+      <h3 id="CU"><b>Contact Us</b></h3>
+      <button id="btn5"> Hide</button>
       Email: <a href="mailto:webmaster@example.com">Mag Magazine</a>.<br/>
-      Facebook: <a href="https://www.facebook.com/" target="_blank"><img src="./images/fb.jpg" alt="Image can't load" style="width: 30px; height: 20px;" ></a><br> 
-      Instagram: <a href="https://www.instagram.com/" target="_blank"><img src="./images/insta.jpg" alt="Image can't load" style="width: 20px; height: 16px;"></a><br><br>
+      Facebook: <a href="//www.facebook.com/" target="_blank"><img src="./images/fb.jpg" alt="Image cant load" style="width: 30px;height: 20px; background-repeat: 0;" ></a><br> Instagram: <a href="www.instagram.com" target="_blank"><img src="./images/insta.jpg" alt="Image cant load" style="width: 20px;height: 16px;"></a><br><br>
       Visit us at :
       Prishtine, Republic of Kosovo
       10000 <br/>
-   </address>
-   <canvas id="Canvas" width="500" height="100" style="border:3px solid #d3d3d3;">
+     
+</address>
+
+<canvas id="myCanvas" width="500" height="100" style="border:3px solid #d3d3d3;">
+
+
     
   </div>
  
@@ -256,7 +227,7 @@ function clickCounter() {
 
 </body>
 <script>
-var c = document.getElementById("Canvas");
+var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.font = "30px Italic";
 ctx.fillText("Thanks for visiting us",15,50);
@@ -267,12 +238,12 @@ ctx.fillText("Thanks for visiting us",15,50);
 
     if (10 <= ora && ora < 15) {
       if (document.body) {
-        document.body.background = "4.jpg";
+        document.body.background = "./images/4.jpg";
       }
     }
 else {
     if (document.body) {
-        document.body.background = "6.jpg";
+        document.body.background = "./images/6.jpg";
     }
 }
 </script>
