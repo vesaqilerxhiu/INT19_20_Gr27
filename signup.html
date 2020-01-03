@@ -2,19 +2,29 @@
 <html>
 <head>
   <title>SignUp</title>
+  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="jquery-1.11.2.min.js"></script>
 
-<script src="jquery-1.11.2.min.js"></script>
 <script>
 $(document).ready(function(){
   $("#btn2").click(function(){
-    $("#test").slideToggle("slow");
-  $("#btn2").text("Click to open");
-  
+  $("#test").slideToggle("slow");
+  var testRole = $("#btn2").text().trim(); 
+  if(testRole=="Click to open"){
+    $("#btn2").text("Click to close");
+  }
+  else{
+    $("#btn2").text("Click to open");
+  }
   });
 });
 </script>
   <style type="text/css">
+  .grad {
+  background-image: linear-gradient(to right, pink , white);
+}
+
   body
   {
     background-color: lightgray;
@@ -49,17 +59,25 @@ $(document).ready(function(){
       color: white;
       padding: 1em;
       border-radius: 10px;
-
     }
      button a 
     {
       text-decoration: none;
       color:white;
     }
+    #Submit
+    {
+      background-color: black;
+      color: white;
+      padding: 1em;
+      border-radius: 10px;
+
+    }
   </style>
 </head>
 <body>
-  <div>
+
+  <div class="grad">
   <h4 id="rv"><b>Sign Up to be a part of us</b></h4><br/>
   <h3><b>Name</b></h3>
   <input type="text" name="Name" placeholder="Enter Name">
@@ -90,8 +108,7 @@ $(document).ready(function(){
 
 
 
-
-  <button id="Sign"><a href="#">Sign Up</button>
+  <input id="Submit" type="submit" name="Sign in">
 
 </div>
 </body>
