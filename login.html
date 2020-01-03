@@ -2,9 +2,24 @@
 <html>
 <head>
 	<title>Sign In</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+  $(document).ready(function(){
+   $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","lightgreen");
+  });
+});
+</script>
+
+
 	<style type="text/css">
   .grad {
-  background-image: linear-gradient(to right,blue , white);
+  background-image: radial-gradient(white, lightgrey, grey);
 }
 
 		 body
@@ -78,27 +93,8 @@
 
     }
     </style>
-  <script>
-function validateForm() {
-  var x = document.forms["myForm"]["femail"].value;
-  if (x == "") {
-    alert("Email must be filled out");
-    return false;
-  }
-  var now = new Date();
-var hours = now.getHours();
 
-
-
-document.write('It\'s now: ', hours, '<br><br>');
-document.bgColor="lightgray";
-
-//18-19 night
-if (hours > 17 && hours < 20){
- document.write ('<body style="background-color: orange">');
-}
-}
-</script>
+ 
 
 </head>
 <body >
@@ -115,7 +111,7 @@ if (hours > 17 && hours < 20){
 	</div>
 	<div id="cr" class="grad">
 		<h3>New to Mag Magazine?</h3>
-		<h3><a href="signup.html">Sign Up</a></h3>
+		<h3><a href="signup.html">Sign Up</a></h38>
   </form>  
 	</div>
   
