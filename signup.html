@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>SignUp</title>
+  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="jquery-1.11.2.min.js"></script>
 
-<script src="jquery-1.11.2.min.js"></script>
 <script>
 $(document).ready(function(){
   $("#btn2").click(function(){
@@ -21,8 +22,9 @@ $(document).ready(function(){
 </script>
   <style type="text/css">
   .grad {
-  background-image: linear-gradient(to bottom, grey, lightgrey , white);
+  background-image: linear-gradient(to right, pink , white);
 }
+
   body
   {
     background-color: lightgray;
@@ -69,22 +71,24 @@ $(document).ready(function(){
       color: white;
       padding: 1em;
       border-radius: 10px;
+
     }
   </style>
 </head>
 <body>
-
+ 
   <div class="grad">
   <h4 id="rv"><b>Sign Up to be a part of us</b></h4><br/>
+  <form>
   <h3><b>Name</b></h3>
   <input type="text" name="Name" placeholder="Enter Name">
   <h3><b>Surname</b></h3>
   <input type="text" name="Surname" placeholder="Enter Surname">
   <h3><b>Birthday</b></h3>
-  <input type="date" name="Birthday" >
+  <input type="date" name="Birthday">
   <h3><b>Gender</b></h3>
   <input type="radio" name="Gender">F
-    <input type="radio" name="Gender" >M
+    <input type="radio" name="Gender">M
 
      <h3><b>Email</b></h3>
   <input type="email" name="Email" placeholder="Enter Email">
@@ -106,6 +110,7 @@ $(document).ready(function(){
 
 
   <input id="Submit" type="submit" name="Sign in">
+</form>
 
 </div>
 </body>
