@@ -3,17 +3,31 @@
 <head>
 	<title>Feedbacks</title>
 	<style type="text/css">
+	body{
+background-image: url("./images/feedbacks.jpg"),url("./images/6.jpg");
+background-repeat: no-repeat, repeat;
+background-attachment:fixed;
+background-position: right bottom, left top;
+background-size: 250px;
+
+
+}
+	textarea {
+            resize: horizontal;
+    }    
 	
 		button{
 			background-color: black;
 			padding:1em;
 			border-radius: 8px;
 
+
 		}
 		button a
 		{
 			text-decoration: none;
 			color:white;
+
 
 		}
 		button a:hover
@@ -22,11 +36,8 @@
 		}
 	</style>
 	<script>
-		
 
-var car = "Feedbacks";
-document.getElementById("demo").innerHTML = car;
- 
+		 
 function myFunction() {
   var str = document.getElementById("surname").innerHTML; 
   var res = str.replace(/Surname/g, "Last Name");
@@ -40,15 +51,18 @@ function myFunction1() {
   document.getElementById("demo").innerHTML = res;
 }
 </script>
+
 </head>
 <body>
-	<h3>Your opinion is too important to us! </h3>
-	<p>Click the button to perfom a global search for the letters "to" in the last sentence, and display the matches</p>
+	<h3 style="font-size: 25px;">Your opinion is too important to us! </h3>
+	<p>Click the button to perfom a global search for the letters "to" in the last sentence, and display the matches.</p>
 	<button style="color:white;"  onclick="myFunction1()">Click</button>
 	<p id="demo"></p>
+	<p id="demo1"></p>
+
 	<form>
-		<fieldset>
-			<legend><b>Feedbacks</b></legend>
+	
+			
 			<h3><b>Name</b></h3>
   <input type="text" name="Name" placeholder="Enter Name" >
   <h3 id="surname"><b>Surname</b></h3>
@@ -59,11 +73,32 @@ function myFunction1() {
 			<h3><b>Mag Magazine to you </b></h3><br/>
 					<textarea name="description" rows="5" cols="60">
 					</textarea><br><br>
-
-					<button><a href = "#">Submit</button></a>
-		<p id="demo">Feedbacks</p>
-		</fieldset>
 	</form>
+<p style="font-size: 20px;">Click the button to see your coordinates.</p>
 
+<button style="color:white"onclick="getLocation()">Try It</button>
+
+<p id="geo"></p>
 </body>
+<script>
+var x = document.getElementById("geo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<script type="text/javascript">
+	var car = "Feedbacks";
+	document.getElementById("demo1").innerHTML = "<b>Feedbacks</b>";
+
+</script>
 </html>
