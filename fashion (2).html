@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/cssrina.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#p1").append(" <br><b>Kendall Jenner</b>.");
+  });
+  $("#btn2").click(function(){
+    $("#div1").remove();
+    alert("You removed the image");
+  });
+  });
+</script>
+	
+
+
+</head>
+<body class="grad">
+	 <header>
+    <nav id="mainMenu">
+    <ul>
+       <li><a href="signup.html" target="_blank">Sign up </a></li> 
+           <li><a href="signin.html" target="_blank">Login </a></li>
+           <li><a href="#">RSS feeds </a></li>
+           <li><a href="#">Archived news</a></li>
+           <li><input id="nowButton" type="button" value="Date&Time" style="float: right;"></li>
+       </ul>
+   </nav>
+   <h1>MAG MAGAZINE</h1>
+   <h3>FASHION</h3>
+
+   <nav id="secondaryMenu">
+    <ul>
+      <li><a href="Homepage.html">HOMEPAGE </a></li> 
+           <li><a href="#">STYLE DEMO </a></li>
+           <li><a href="#">FULL WIDTH </a></li>
+           <li><a href="#">DROPDOWN</a></li>
+           <li><a href="#">LINKED TEXT</a></li>
+       </ul>
+   </nav>
+
+  </header>
+  
+
+ <table cellspacing="30">
+ 	<tr>
+ 		
+ 		<td>
+ 		
+ 			<a href="#"><img id="ph" src="./images/foto1.jpg" alt="The photo cant load"></a>
+ 	
+
+ 		</td>
+
+ 		<td>
+ 			<a href="#"><img id="ph" src="./images/foto2.jpg" alt="The photo cant load"></a>
+ 		</td>
+ 		<td>
+ 			<a href="#"><img id="ph" src="./images/foto3.jpg" alt="The photo cant load"></a>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td>
+ 			These 5 Pieces Always Make Me Happier When Getting Dressed
+ 			
+ 		</td>
+ 		<td>Zara Just Launched Its Boxing Day Sale and It's Completely Amazing
+ 		</td>
+ 		<td>While we saw lots of beiges and neons from the S/S 19 trends, this year coming we'll see a continuation of these themes</td>
+ 	</tr>
+ 	<tr>
+
+ 		<td colspan="3">
+
+ 			<p id="p1" style="font-size: 30px;"><b>FASHION ICON OF THE DECADE</b></p>
+ 				<button id="btn1">Click to see who</button>
+ 		</td>
+ 	</tr>
+ 	<tr ><td colspan="3">
+ 		<div id="div1">
+ 		<img src="./images/foto.jpg" alt="Image cant load" style="width:350px; height: 400px">
+ 	</div>
+ 	<button id="btn2">Remove photo</button>
+ 	</td>
+ 	</tr>
+ </table>
+ <br><br>
+ <h2><b>What is fashion?</b></h2>
+ <p class="mulcol">Fashion is a popular aesthetic expression in a certain time and context, especially in clothing, footwear, lifestyle, accessories, makeup, hairstyle and body proportions. Whereas, a trend often connotes a very specific aesthetic expression, and often lasting shorter than a season, fashion is a distinctive and industry-supported expression traditionally tied to the fashion season and collections. Style is an expression that lasts over many seasons, and is often connected to cultural movements and social markers, symbols, class and culture (ex. Baroque, Rococo, etc.). According to sociologist Pierre Bourdieu, fashion connotes “the latest fashion, the latest difference.
+	</p>
+	<div  style="float:left">
+		<h2><b>Official Fashion Week Dates 2020</b></h2>
+			<p>New York Fashion Week <br>
+February 6 – 13, 2020<br><br>
+
+
+London Fashion Week | schedule<br>
+February 14 – 18, 2020<br><br>
+
+
+Milan Fashion Week | schedule<br>
+February 18 – 24, 2020<br><br>
+
+
+Paris Fashion Week | schedule<br>
+February 24 – March 4, 2020
+
+
+
+		</p>
+
+	</div>
+	<div class="img" style="float: right; margin: 0 6em;">
+		<figure>
+			<img src="./images/foto4.png">
+		</figure>
+
+	</div>
+	 <table cellspacing="50">
+ 	<tr>
+ 		
+ 		<td>
+ 		     <div id="img1">
+ 			<img  src="./images/foto1.jpg" alt="The photo cant load" style="width: 250px; height:250px;">
+ 		</div>
+ 	
+
+ 		</td>
+
+ 		<td>
+ 			<div id="img2">
+ 			<img id="ph" src="./images/foto2.jpg" alt="The photo cant load" style="width: 250px; height: 250px;">
+ 		</div>
+ 		</td>
+ 		<td>
+ 			<div id="img3">
+ 			<img id="ph" src="./images/foto3.jpg" alt="The photo cant load" style="width:200px; height:200px";>
+ 		</div>
+ 		</td>
+ 	</tr>
+<script type="text/javascript">
+	function myFunction() {
+  var num = 5.05;
+  var n = num.toExponential();
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+
+</body>
+</html>
