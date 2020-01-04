@@ -5,7 +5,35 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="./css/css.css">
   <script type="text/javascript" src="./js/js.js"></script>
- 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="jquery-1.11.2.min.js"></script>
+  <script>
+$(function(){
+
+  $("#btn3").click(function(){
+    $("#cu").hide();
+  });
+  $("#btn4").click(function(){
+    $("#cu").show();
+  });
+});
+  </script>
+  <script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+            sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked these buttons " + sessionStorage.clickcount + " times.";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
+
   <header>
     <div id="u1">
     <nav id="mainMenu">
@@ -16,18 +44,35 @@
            <li><a href="feedbacks.html">Feedbacks</a></li>
            <li><input id="nowButton" type="button" value="Date&Time" style="float: right; background-color: #333333;"></li>
        </ul>
+     
    </nav>
  </div>
+ <div id="svg" style="float: right;margin-left:30px;padding-top: 2em;">
+ <svg height="130" width="250">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:black;stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:black;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana"
+  x="50" y="86">MAG</text>
+Sorry, your browser does not support inline SVG.
+</svg>
+</div>
    <h1>MAG MAGAZINE</h1>
    <h3>ALL THE LATEST NEWS & INFORMATIONS IN THE WORLD</h3>
 
    <nav id="secondaryMenu">
     <ul>
       <li><a href="#">HOMEPAGE </a></li> 
-           <li><a href="#">STYLE DEMO </a></li>
-           <li><a href="#">FULL WIDTH </a></li>
-           <li><a href="#">DROPDOWN</a></li>
-           <li><a href="#">LINKED TEXT</a></li>
+           <li><a href="fashion.html">FASHION</a></li>
+           <li><a href="vesa.html">SPORTS</a></li>
+           <li><a href="#">PROMI WORLD</a></li>
+           
        </ul>
    </nav>
 
@@ -36,9 +81,9 @@
 
 
    <section id="part1">
-         <div class="left1" style="float: left">
+         <div class="left1" style="float: left; box-shadow: 10px 10px 5px grey;">
 
-        <img id="gg" src="./images/download.jpg"></img>
+        <img id="gg" src="./images/download.jpg" alt="Image can't load."></img>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         
 
@@ -47,20 +92,20 @@
       <table>
         <tr>
           <td>
-        <img id="gg" src="./images/download.jpg"></img></td>
+        <img id="gg" src="./images/download.jpg" alt="Image can't load."></img></td>
         <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
       </tr>
       
 
       <tr>
         <td>
-        <img id="gg" src="./images/download.jpg"></img></td>
+        <img id="gg" src="./images/download.jpg" alt="Image can't load."></img></td>
         <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </td>
       </tr>
       <tr>
         <td>
-        <img id="gg" src="./images/download.jpg"></img></td>
+        <img id="gg" src="./images/download.jpg" alt="Image can't load."></img></td>
         <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
           </td>
          </tr> 
@@ -74,40 +119,40 @@
           <tr>
             <td>
               
-              <img  id="gg" src="./images/download.jpg">
+              <img  id="gg" src="./images/download.jpg" alt="Image can't load.">
             
             </td>
             <td>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </td>
             <td>
-              <img id="gg" src="./images/download.jpg"></td>
+              <img id="gg" src="./images/download.jpg" alt="Image can't load."></td>
               <td>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p></td>
             </tr>
              <tr>
             <td>
-              <img id="gg" src="./images/download.jpg">
+              <img id="gg" src="./images/download.jpg" alt="Image can't load.">
             </td>
             <td>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </td>
             <td>
-              <img id="gg" src="./images/download.jpg"></td>
+              <img id="gg" src="./images/download.jpg" alt="Image can't load."></td>
               <td>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p></td>
             </tr>
              <tr>
             <td>
-              <img id="gg" src="./images/download.jpg">
+              <img id="gg" src="./images/download.jpg" alt="Image can't load.">
             </td>
             <td>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </td>
             <td>
-              <img id="gg" src="./images/download.jpg"></td>
+              <img id="gg" src="./images/download.jpg" alt="Image can't load."></td>
               <td>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p></td>
@@ -116,13 +161,13 @@
           <table cellpadding="5">
             <tr>
               <td>
-                <p id="p"><a href="#"><b>FINANCIAL</b></a></p>
+                <p id="p"><a href="#"><b>FASHION</b></a></p>
               </td>
               <td>
                 <p id="p"><a href="#"><b>SPORT</b></a></p>
               </td>
               <td>
-                <P id="p"><a href="#"><b>PROMI</b></a></P>
+                <P id="p"><a href="#"><b>PROMI WORLD</b></a></P>
               </td>
               <td>
                 <p id="p"><a href="#"><b>MUSIC&ARTS</b></a></p>
@@ -146,13 +191,16 @@
             <tr>
               <td class="td1">
                 <div id="u2">
-                <img  src="./images/download.jpg" id="img1"></td></div>
-                <td>
-                <img   src="./images/download.jpg" id="img1"></td>
-                <td>
-                <img   src="./images/download.jpg" id="img1"></td>
-                <td>
-                <img   src="./images/download.jpg" id="img1"></td>
+                <img  src="./images/download.jpg" id="img1" alt="Image can't load."></td></div>
+                <td class="td1">
+                <div id="u2">
+                <img  src="./images/download.jpg" id="img1" alt="Image can't load."></td></div>
+                <td class="td1">
+                <div id="u2">
+                <img  src="./images/download.jpg" id="img1" alt="Image can't load."></td></div>
+                <td class="td1">
+                <div id="u2">
+                <img  src="./images/download.jpg" id="img1" alt="Image can't load."></td></div>
               </tr>
               <tr>
                 <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
@@ -165,14 +213,32 @@
          </div>
       <div class="right2" style="float: right">
         <table>
-          <tr>
-          <th>Adverstiment</th>
-          <th> Categories</th>
-        </tr>
-        <tr>
-          <td rowspan="3">
-            <img src="./images/download.jpg" style="padding: 2px;"></td></tr>
-          </td></tr>
+  <tr>
+  <th>Adverstiment</th>
+    <th>Categories </th>
+    
+    <tr>
+    <td rowspan="20">
+      
+      <img src="./images/download.jpg" alt="Image can't load.">
+    </td>
+    </tr>
+      <td>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        
+          
+        </td>
       
 
 </table>
@@ -202,20 +268,20 @@
       <div id="copyright">
 
 
-      <address>
-      <h3 id="CU"><b>Contact Us</b></h3>
-      <button id="btn5"> Hide</button>
+      <address &#235>
+      <h3 id="cu"><b>Contact Us</b></h3>
+      <button id="btn3" onclick="clickCounter()">Hide</button>
+      <button id="btn4" onclick="clickCounter()">Show</button>
+
+      <div id="result"></div><br>
       Email: <a href="mailto:webmaster@example.com">Mag Magazine</a>.<br/>
-      Facebook: <a href="//www.facebook.com/" target="_blank"><img src="./images/fb.jpg" alt="Image cant load" style="width: 30px;height: 20px; background-repeat: 0;" ></a><br> Instagram: <a href="www.instagram.com" target="_blank"><img src="./images/insta.jpg" alt="Image cant load" style="width: 20px;height: 16px;"></a><br><br>
+      Facebook: <a href="https://www.facebook.com/" target="_blank"><img src="./images/fb.jpg" alt="Image can't load." style="width: 30px; height: 20px;" ></a><br> 
+      Instagram: <a href="https://www.instagram.com/" target="_blank"><img src="./images/insta.jpg" alt="Image can't load." style="width: 20px; height: 16px;"></a><br><br>
       Visit us at :
-      Prishtine, Republic of Kosovo
+      Prishtin&#235, Republic of Kosovo
       10000 <br/>
-     
-</address>
-
-<canvas id="myCanvas" width="500" height="100" style="border:3px solid #d3d3d3;">
-
-
+   </address>
+   <canvas id="Canvas" width="500" height="100" style="border:3px solid #d3d3d3;">
     
   </div>
  
@@ -227,7 +293,7 @@
 
 </body>
 <script>
-var c = document.getElementById("myCanvas");
+var c = document.getElementById("Canvas");
 var ctx = c.getContext("2d");
 ctx.font = "30px Italic";
 ctx.fillText("Thanks for visiting us",15,50);
