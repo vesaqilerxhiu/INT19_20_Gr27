@@ -5,7 +5,7 @@
   <title>Sports</title>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery-1.11.2.min.js"></script>
+  <script src="jquery-1.11.2.min.js"></script>
 <script>
 $(document).ready(function(){
   $("#button2").click(function(){
@@ -13,6 +13,26 @@ $(document).ready(function(){
   });
 });
 </script>
+      <script>
+ var links = ["","","","","","","",""];
+        var images = ["./images/topi.jpg","./images/kids.jpg",
+    "./images/stadiumi.jpg", "./images/lala.jpg",
+    "./images/kupa.jpg","./images/tenis.jpg",
+    "./images/ath.jpg","./images/golf.jpg"];
+        var i = 0;
+        var renew = setInterval(function(){
+            if(links.length == i){
+                i = 0;
+            }
+            else {
+            document.getElementById("bannerImage").src = images[i]; 
+            document.getElementById("bannerLink").href = links[i];
+            i++;
+
+        }
+        },1200);
+    
+    </script>
 <script>
 function myFunction() {
   var x, text;
@@ -86,22 +106,22 @@ function myFunction() {
       <li><a href="homepage.html">HOMEPAGE </a></li> 
            <li><a href="fashion.html">FASHION</a></li>
            <li><a href="vesa.html">SPORTS</a></li>
-           <li><a href="#">DROPDOWN</a></li>
-           <li><a href="#">LINKED TEXT</a></li>
+           <li><a href="#">PROMI WORLD</a></li>
+          
        </ul>
    </nav>
 
   </header>
   <section>
     <div style="float:left; margin: 0 0 0 3em;">
-      <h3 style="text-align: left; padding: 0 0 0 1.5em">Interesting facts about football:</h3>
+      <h3 style="text-align: left; padding: 1.5em 0 0 1.5em">Interesting facts about football:</h3>
       <ol>
         <li>Football is the most watched and most played sport on earth.
           <ul>
             <li>It has 4 Billion Fans.</li>
           </ul>
         </li>
-        <li>The FIFA World Cup is the most-watched sporting event in the world.
+        <li &#233;>The <abbr title="F&#233d&#233ration Internationale de Football Association">FIFA</abbr> World Cup is the most-watched sporting event in the world.
         <ul>
           <li>The 2022 World Cup in Qatar will mark the first time <br>the tournament will be held in this county.</li>
           <li>The World Cup trophy went missing for 7 days in 1966 <br>when it was stolen just prior to the tournament.</li>
@@ -112,14 +132,23 @@ function myFunction() {
         </li>
         <li>Lightning killed an entire football team during a game in 1998.</li>
       </ol>
+      <audio style="margin: 1em 0 0 4.7em;" controls>
+  <source src="./images/uefa.mp3" type="audio/mpeg">
+  
+</audio>
     </div>
 
-     <div style="float:right; margin: 0 3em 0 0;">
+    <div style="float: right; margin: 2em 3em 0 0;">
+     <div style="float:right;">
+     <a id="bannerLink" href="#">
+     <img style="margin: 1em 0 0 3em; margin-right: 5em;" id="bannerImage" src="./images/topi.jpg" width="400px" height="250px" alt="Image can't load."></a>
 
      </div>
-          
-    
-  </section>
+      
+    </div> 
+
+</section>
+
 
   <section>
     <table cellpadding="5" class="grad">
@@ -131,19 +160,19 @@ function myFunction() {
       <tr>
         <td>
           <figure>
-          <img id="image" src="./images/inter.jpg">
+          <img id="image" src="./images/inter.jpg" alt="Image can't load.">
           <figcaption style="text-align: center; font-size: 18px" ><b>Inter Milan ready to bid £25m for Chelsea star</b></figcaption>
         </figure>
         </td>
         <td>
           <figure>
-          <img id="image" src="./images/chelsea.jpg">
+          <img id="image" src="./images/chelsea.jpg" alt="Image can't load.">
           <figcaption style="text-align: center; font-size: 18px" ><b>West Ham: David Moyes plans hardline approach with players </b></figcaption>
         </figure>
         </td>
         <td>
           <figure>
-          <img id="image" src="./images/liverpool.jpg">
+          <img id="image" src="./images/liverpool.jpg" alt="Image can't load.">
           <figcaption style="text-align: center; font-size: 18px" ><b>Lallana calls on Premier League leaders not to ‘take foot off the gas’</b></figcaption>
         </figure>
         </td>
@@ -162,6 +191,16 @@ function myFunction() {
         </tr>
       </table>
     </section>
+
+    <section style="border-bottom: groove;">
+    <div style="margin: 0 0 3em 0;">
+      <h3 style="text-align: center; margin: 3em 0 0 0 ;">LOSS (Basketball Short Film)</h3>
+    <video width="550px" height="330px" style="margin: 3em 0 0 25em " controls>
+    <source src="./images/basketball.mp4" type="video/mp4">   
+    </video>
+ 
+  </section>
+
      <section id="sec1">
       <div>
 
@@ -173,10 +212,10 @@ function myFunction() {
       <h2 style="text-align: center">Lionel Messi</h2>
 
 
-      <button onclick="clickCounter()"  id="button2" style="margin: 0 9em;">Click to fade</button><br><br>
+      <button id="button2" style="margin: 0 9em;">Click to fade</button><br><br>
 
        <div id="result" style="text-align: center;"></div>
-       <img id ="image1"src="./images/messi.jpg">
+       <img id ="image1"src="./images/messi.jpg" alt="Image can't load.">
       </div>
 
 
@@ -189,7 +228,7 @@ function myFunction() {
       <button type="button" onclick="myFunction()">Submit</button>
       <p id="demo" style="text-align: center"></p>
       
-      <img id ="image2"src="./images/ballondor.jpg">
+      <img id ="image2"src="./images/ballondor.jpg" alt="Image can't load.">
 
 
 
