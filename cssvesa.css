@@ -1,0 +1,146 @@
+html { font-size: 62.5%; }
+
+body {
+  background-color: #91F4EA;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'PT Sans', sans-serif;
+  /*width: 1000px;*/
+}
+
+header h1 
+{
+	font-size: 80px;
+	text-align: center;
+	font-weight: bold;	
+	font-family: italic;
+	margin: 30px 90px 30px 90px;
+}
+header h3
+{
+	text-align: center;
+	color:lightgrey;
+	font-family: italic;
+	font-size: 30px;
+}
+
+nav#mainMenu
+{
+	/*margin-left: 150px;*/
+	text-align: left;
+	color:black;
+	background-color: black;
+	font-family: sans-serif;
+	
+}
+
+nav#secondaryMenu
+{
+	text-align: left;
+	font-size: 1.1em;
+	color:black;
+	font-family: sans-serif;
+}
+
+nav#secondaryMenu a
+{
+	color:black;
+}
+
+nav#secondaryMenu a:hover
+{
+	color:gray;
+}
+a
+{
+	text-decoration: none;
+	color:white;
+}
+a:hover
+{
+	color:gray;
+}
+a:visited
+{
+	
+	text-decoration: none;
+
+}
+a:active
+{
+	color:yellow;
+}
+
+nav
+{
+	border-top: groove 1px;
+	border-bottom: groove 1px;
+	color:black;	
+
+}
+nav ul li
+{
+	list-style: none;
+	display: inline;
+	padding: 12px;
+	font-color:black;
+
+}
+#nowButton
+{
+background-color: black;
+      color: white;
+      
+      border-radius: 10px;
+}
+
+#image
+{
+	width: 325px;
+	height: 200px;
+}
+#image1
+{
+	width: 320px;
+	height: 400px;
+}
+#image2
+{
+	width: 380px;
+	height: 400px;
+}
+
+#sec1
+{
+	padding: 2em;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+#image2 {
+  -webkit-transform: rotateY(150deg);
+  transform: rotateY(150deg); 
+}
+button
+{
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 1px;
+}
+#image4
+{
+	width: 334px;
+	height: 200px;
+}
+#image3:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#image3
+{
+	width: 325px;
+	height: 200px;
+}
