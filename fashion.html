@@ -3,18 +3,83 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="./css/cssrina.css">
+	<script type="text/javascript" src="./js/js.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   $("#btn1").click(function(){
     $("#p1").append(" <br><b>Kendall Jenner</b>.");
   });
+  $("#btn4").click(function(){
+    $("#p4").append("  <br>London Fashion Week <br> April 18 – 24, 2020<br><br>.");
+  });
   $("#btn2").click(function(){
     $("#div1").remove();
     alert("You removed the image");
   });
-  });
+});
 </script>
+
+
+	<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Field must be filled out");
+    return false;
+  }
+}
+
+</script>
+<style>
+.container {
+  position: relative;
+  width: 70%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+</style>
+
+
+
+ 
+
+
+  
+
 	
 
 
@@ -23,10 +88,10 @@ $(document).ready(function(){
 	 <header>
     <nav id="mainMenu">
     <ul>
-       <li><a href="signup.html" target="_blank">Sign up </a></li> 
-           <li><a href="signin.html" target="_blank">Login </a></li>
-           <li><a href="#">RSS feeds </a></li>
-           <li><a href="#">Archived news</a></li>
+       <li><a href="signup.html" target="_blank">Sign Up </a></li> 
+           <li><a href="login.html" target="_blank">Sign In </a></li>
+           <li><a href="#copyright">Contact us</a></li>
+           <li><a href="feedbacks.html">Feedbacks</a></li>
            <li><input id="nowButton" type="button" value="Date&Time" style="float: right;"></li>
        </ul>
    </nav>
@@ -35,43 +100,65 @@ $(document).ready(function(){
 
    <nav id="secondaryMenu">
     <ul>
-      <li><a href="Homepage.html">HOMEPAGE </a></li> 
-           <li><a href="#">STYLE DEMO </a></li>
-           <li><a href="#">FULL WIDTH </a></li>
-           <li><a href="#">DROPDOWN</a></li>
-           <li><a href="#">LINKED TEXT</a></li>
-       </ul>
+       <li><a href="homepage.html">HOMEPAGE </a></li> 
+           <li><a href="fashion.html">FASHION</a></li>
+           <li><a href="vesa.html">SPORTS</a></li>
+           <li><a href="#">PROMI WORLD</a></li>
+                  </ul>
    </nav>
 
   </header>
   
 
- <table cellspacing="30">
- 	<tr>
+ <table cellspacing="20">
+ 	<tr> <th colspan="3" style="font-size:28px;"> TOPIC OF THE DAY</th></tr>
+ 		<tr>
+ 		<th colspan="2">
+ 			
+ 		 <h2 style="font-size: 28px;">Tradicional clothing of Kosovo
+ 		 	<img src="./images/ks.png" style="width: 20px; height: 20px;"><h2> </th>
+ 		<th>
+ 			Kosovo Official Hymn <br>
+ 			<audio style="padding-top: 3px;" controls>
+ 				 <source src="./images/audioKS.mp3" type="audio/mpeg">
+ 			</audio>
+ 		</th>
+ 	</tr>
+ 	
+ 		<tr>
+ 			<td>
+ 				<figure>
+ 					<div class="container">
  		
- 		<td>
- 		
- 			<a href="#"><img id="ph" src="./images/foto1.jpg" alt="The photo cant load"></a>
+ 			<a href="https://en.wikipedia.org/wiki/Traditional_clothing_of_Kosovo"><img id="ph" src="./images/foto1.jpg" alt="The photo cant load" style="width: 300px; padding-left:1em;" class="image"></a>
+ 			 <div class="overlay">
+ 			 <div class="text"><p>Women's Podgur</p></div>
+ 			
+ 		</figure>
  	
 
  		</td>
 
  		<td>
- 			<a href="#"><img id="ph" src="./images/foto2.jpg" alt="The photo cant load"></a>
- 		</td>
- 		<td>
- 			<a href="#"><img id="ph" src="./images/foto3.jpg" alt="The photo cant load"></a>
- 		</td>
- 	</tr>
- 	<tr>
- 		<td>
- 			These 5 Pieces Always Make Me Happier When Getting Dressed
+ 			<figure>
+ 				<div class="container">
+ 			<a href="https://en.wikipedia.org/wiki/Traditional_clothing_of_Kosovo"><img id="ph" src="./images/foto2.jpg" alt="The photo cant load" style="width:300px" class="image"></a>
+ 			 <div class="overlay">
+ 			 <div class="text"><p> Men's Podgur</p></div>
  			
+ 		</figure>
  		</td>
- 		<td>Zara Just Launched Its Boxing Day Sale and It's Completely Amazing
+ 		<td>
+ 			<figure>
+ 				<div class="container">
+ 			<a href="https://en.wikipedia.org/wiki/Traditional_clothing_of_Kosovo"><img id="ph" src="./images/foto3.jpg" alt="The photo cant load" style="width: 300px;" class="image"></a>
+ 			 <div class="overlay">
+ 			 <div class="text"><p>The clothing tool</p></div>
+ 			
+ 		</figure>
  		</td>
- 		<td>While we saw lots of beiges and neons from the S/S 19 trends, this year coming we'll see a continuation of these themes</td>
  	</tr>
+ 	
  	<tr>
 
  		<td colspan="3">
@@ -89,12 +176,100 @@ $(document).ready(function(){
  	</tr>
  </table>
  <br><br>
- <h2><b>What is fashion?</b></h2>
- <p class="mulcol">Fashion is a popular aesthetic expression in a certain time and context, especially in clothing, footwear, lifestyle, accessories, makeup, hairstyle and body proportions. Whereas, a trend often connotes a very specific aesthetic expression, and often lasting shorter than a season, fashion is a distinctive and industry-supported expression traditionally tied to the fashion season and collections. Style is an expression that lasts over many seasons, and is often connected to cultural movements and social markers, symbols, class and culture (ex. Baroque, Rococo, etc.). According to sociologist Pierre Bourdieu, fashion connotes “the latest fashion, the latest difference.
+ <h2 style="margin:10px;  text-decoration: underline overline; "><b>What is fashion?</b></h2>
+ <p class="mulcol">Fashion is a popular aesthetic expression in a certain time and context, especially in clothing, footwear, lifestyle, accessories, makeup, hairstyle and body proportions. Whereas, a trend often connotes a very specific aesthetic expression, and often lasting shorter than a p2season, fashion is a distinctive and industry-supported expression traditionally tied to the fashion season and collections. Style is an expression that lasts over many seasons, and is often connected to cultural movements and social markers, symbols, class and culture (ex. Baroque, Rococo, etc.). According to sociologist Pierre Bourdieu, fashion connotes “the latest fashion, the latest difference.
 	</p>
+	
+		<h2 style="padding-left: 2em;padding-top: 2em;"><b>Official Fashion Week Dates 2020</b></h2>
+		
+		         <button onclick="myFunction()" style="margin-left: 5em;">Click to see year in Exponential form</button>
+		         <p id="p2" style="margin-left:5em;"></p>
+		         
+		         <div id="panel" style="float:left; padding-left:3em;">
+			      <p id="p4" >New York Fashion Week <br>
+                 February 6 – 13, 2020<br><br>
 
+
+                  London Fashion Week | schedule<br>
+                  February 14 – 18, 2020<br><br>
+
+
+                  Milan Fashion Week | schedule<br>
+                  February 18 – 24, 2020<br><br>
+
+
+                  Paris Fashion Week | schedule<br>
+                     February 24 – March 4, 2020
+
+
+
+
+
+                     <button id="btn4" style="margin:1em;">Click for more dates.</button> 
+                     
+
+
+
+	             </p>
+
+	                     </div>
+	<div class="img" style="float: right; margin: 0 5em 4em 4em;">
+		<p>Sequences from the last fashion week</p>
+	<video width="400" height="250" controls>
+  <source src="./images/video1.mp4" type="video/mp4">
+   
+</video>
+
+	</div>
+	 <table cellspacing="50">
+ 	<tr>
+ 		
+ 		<td>
+ 		     <div id="img1">
+ 		     	<figure>
+ 			<img  src="./images/foto5.jpg" alt="The photo cant load" style="width: 250px; height:250px;">
+ 			<figcaption><b>ALPACA JACQUARD SWEATER</b></figcaption>
+ 		</figure>
+ 		</div>
+ 	
+
+ 		</td>
+
+ 		<td>
+ 			<div id="img2">
+ 				<figure>
+ 			<img id="ph" src="./images/foto6.jpg" alt="The photo cant load" style="width: 250px; height: 230px;">
+ 			<figcaption><b>OVERSIZED SWEATER</figcaption>
+ 		</figure>
+ 		</div>
+ 		</td>
+ 		<td>
+ 			<div id="img3">
+ 				<figure>
+ 			<img id="ph" src="./images/foto7.jpg" alt="The photo cant load" style="width:100px; height:200px";>
+ 			<figcaption><b>SOFT SWEATER</b></figcaption>
+ 		</figure>
+
+ 		</div>
+ 		</td>
+ 		<td>
+ 			<h3>Which sweater do you like the most?</h3>
+ 			<form name="myForm" action="homepage.html" onsubmit="return validateForm()" method="post">
+             <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+ 	<script>
+function myFunction() {
+  var num = 2000.00;
+  var n = num.toExponential();
+  document.getElementById("p2").innerHTML = n;
+}
+</script>
+
+ 	
 
 
 
 </body>
-</html>
+</html
