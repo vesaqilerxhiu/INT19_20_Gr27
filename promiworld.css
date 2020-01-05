@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 body {
 	background-color : rgb(255,250,250);
 	margin-left:250px;
 	margin-right: 250px;
-
+	min-height: 100v
 
 }
 .content
@@ -12,13 +15,11 @@ body {
 	"Lucida Sans", Geneva, Arial,
 	 sans-serif;
 }
-
-}
 .button{
   border-radius: 50px;
   background: none;
   border: 2px solid #212121;
-  color: #202020;
+  color: #212121;
   padding: 18px 35px;
   text-align: center;
   text-decoration: none;
@@ -27,7 +28,6 @@ body {
   margin-top: 50px;
   margin-left: 100px;
   cursor: pointer;
- /* transition: .3s;*/
   width: 180px;
 }
 header h1 
@@ -102,7 +102,7 @@ nav ul li
 	list-style: none;
 	display: inline;
 	padding: 12px;
-	font-color:black;
+	color:black;
 
 }
 footer 
@@ -110,17 +110,13 @@ footer
  border-top: groove;
  margin: 1em;
  text-align: left;
-```
 }
 footer p 
 {
 	color:gray;
 	padding: 12px;
 }
-.slideshow-container
-{
- 
-* {box-sizing: border-box;}
+
 
 .container {
   position: relative;
@@ -132,7 +128,7 @@ footer p
   position: absolute; 
   bottom: 0; 
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1; 
   width: 100%;
   transition: .5s ease;
@@ -147,13 +143,99 @@ footer p
 .container:hover .overlay {
   opacity: 1;
 }
-.mag 
+#myForm {
+	padding-top:5%;
+	text-align: center;
+	bottom:0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color:white;
+	position: fixed;
+	top:0;
+	left: 0;
+}
+#nowButton {
+	margin-right: 5px;
+	margin-top:-5px;
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+#nowButton:hover {
+	cursor: pointer;
+}
+.open-button {
+	background-color: white;
+	border: 1px solid black;
+	padding: 10px 20px;
+}
+.open-button:hover {
+	cursor: pointer;
+}
+.loginBtn {
+	text-align: center;
+}
+.paragraph
 {
+	border:dotted;
+	border-width: 7px;
+	border-color: black ;
+	width :200px;
+	height:200px;
+	float: center ;
+	margin-left: 100px;
+	display: inline-block;
+	margin-top: 100px;
+}
+.dotted-content
+{
+	background-color:#adad9a ;
+	margin-top: 50px;
+	padding-bottom: 70px;
 
-background-color: lightgrey;
-  width: 900px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
- flex-direction: column;
+}
+	
+video
+ {
+  width: 500px;
+  height: 450px;
+  float: right;
+  
+}
+
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.solid-paragraph
+{
+	border:solid;
+	border-width:5px;
+	width:400px;
+	height: 450px;
+	border-color:black;
+	float:left;
+	display: inline-block;
+	border-radius:15px;
+	margin-bottom: 100px;
+}
+	
+.content1
+{
+margin-top: 100px;
+font-family: 
 }
